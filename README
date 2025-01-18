@@ -90,9 +90,14 @@ Then what?
 ----------
 
 You need to then copy this into the relevant location for your operating
-system.  Yes, this means you need a driver.  No, there's no FreeBSD
-driver yet for this particular chipset, sorry.
+system (on Linux, this is `/lib/firmware` folder - create it if necessary).
+Yes, this means you need a driver.  No, there's no FreeBSD driver yet for
+this particular chipset, sorry.
 
+```shell
+# cp target_firmware/htc_9271.fw /lib/firmware
+# cp target_firmware/htc_7010.fw /lib/firmware
+```
 
 Where do I file bugs?
 ---------------------

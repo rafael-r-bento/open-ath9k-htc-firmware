@@ -4,11 +4,11 @@ GMP_TAR=gmp-$(GMP_VER).tar.bz2
 GMP_DIR=gmp-$(GMP_VER)
 GMP_SUM=f51c99cb114deb21a60075ffb494c1a210eb9d7cb729ed042ddb7de9534451ea
 
-MPFR_VER=4.1.0
+MPFR_VER=4.2.1
 MPFR_URL=https://ftp.gnu.org/gnu/mpfr/mpfr-$(MPFR_VER).tar.bz2
 MPFR_TAR=mpfr-$(MPFR_VER).tar.bz2
 MPFR_DIR=mpfr-$(MPFR_VER)
-MPFR_SUM=feced2d430dd5a97805fa289fed3fc8ff2b094c02d05287fd6133e7f1f0ec926
+MPFR_SUM=b9df93635b20e4089c29623b19420c4ac848a1b29df1cfd59f26cab0d2666aa0
 
 MPC_VER=1.1.0
 MPC_URL=https://ftp.gnu.org/gnu/mpc/mpc-$(MPC_VER).tar.gz

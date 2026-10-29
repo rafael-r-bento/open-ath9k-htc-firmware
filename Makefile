@@ -44,6 +44,7 @@ all: toolchain
 define Common/Compile
 	mkdir -p $(BUILD_DIR)/$($(1)_DIR)
 	+cd $(BUILD_DIR)/$($(1)_DIR) && \
+        CC="gcc -std=gnu17" \
 	$(DL_DIR)/$($(1)_DIR)/configure \
 		--prefix=$(TOOLCHAIN_DIR)/inst \
 		$(2) && \
@@ -53,7 +54,7 @@ endef
 define GMP/Compile
 	$(call Common/Compile,GMP, \
 		--disable-shared --enable-static, \
-		$(MAKE) && $(MAKE) check && $(MAKE) -j1 install \
+		CC="gcc -std=gnu17" $(MAKE) && $(MAKE) check && $(MAKE) -j1 install \
 	)
 endef
 
